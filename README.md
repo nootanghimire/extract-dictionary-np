@@ -14,4 +14,4 @@ Output File Format
 <english_text>      <meaning_comma_seperated>*
 
 
-> * = null if meaning is not found. 
+* = null if meaning is not found. 
