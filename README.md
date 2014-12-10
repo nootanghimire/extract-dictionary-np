@@ -2,8 +2,13 @@ Extract Meanings of english words from http://dictionary.com.np
 ===========
 
 ```bash
-$ ./main.py <list_of_english_words_newline_seperated> <file_name_to_write_meanings> [--resume]
+$ ./main.py <line_seperated_wordlist_en> <filename_to_write> [--resume]
 ```
+Or 
+```bash
+$ ./main.py
+```
+to show uses. 
 
 Smart save. Use Resume to continue from the last position.
 
