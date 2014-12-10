@@ -11,7 +11,7 @@ Smart save. Use Resume to continue from the last position.
 Output File Format
 =====
 
-<english_text>      <meaning_comma_seperated>*
+`<english_text>      <meaning_comma_seperated>*`
 
 
 * = null if meaning is not found. 
