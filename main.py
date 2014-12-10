@@ -13,7 +13,7 @@ def getData(text):
         'search2nep': text,
         'submit1': 'Search',
     }
-    print("Requested: " + url+ "with search2nep: " +text,end="")
+    print("Requested: " + url+ " with search2nep: " +text,end="")
     response = requests.post(url, data=form_data)
     tree = lh.document_fromstring(response.content)
     #return lh.tostring(tree.cssselect("font.nepfont")[0])
@@ -43,13 +43,14 @@ def readFile(filename, filename_new, resume=False):
         pos = pos.split(" ")
         pos = pos[0]
         pos = int(pos)
+        print("Calculated Resume Position! Now Resuming from line", pos, "...")
     with open(filename) as f:
         if resume:
             for i in range(pos):
                 next(f)
         for line in f:
             text = line.strip()
-            utf = os.popen("echo \"" + getData(line.strip()).strip() + "\" | ./2utf8/main.sh").read()
+            utf = os.popen("echo \"" + getData(text).strip() + "\" | ./2utf8/main.sh").read()
             utf = utf.strip()
             print(text + "\t" +  utf , file=filenew)
 
