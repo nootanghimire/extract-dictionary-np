@@ -10,8 +10,9 @@ Smart save. Use Resume to continue from the last position.
 
 Output File Format
 =====
+The output file will have the lines in the format as shown below:
 
 `<english_text>      <meaning_comma_seperated>*`
 
 
-* = null if meaning is not found. 
+\*null if meaning is not found. 
